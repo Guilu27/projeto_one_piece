@@ -10,16 +10,6 @@
     <nav></nav>
     <section class="hero container">
       <div class="hero__content">
-        <div class="hero__content__info">
-          <img src="dist/images/logo.png" alt="one piece" />
-          <h3 class="sectionTitle">ONE PIECE: A Série</h3>
-          <p class="sectionText">
-            O jovem pirata Monkey D. Luffy veste o chapéu de palha e, com sua
-            tripulação atrapalhada, zarpa em uma jornada épica nesta adaptação
-            em live-action do popular mangá.
-          </p>
-          <a href="#" class="button">Assita ao trailer</a>
-        </div>
         <div class="hero__content__background">
           <picture>
             <source
@@ -32,18 +22,291 @@
             />
           </picture>
         </div>
+        <div class="hero__content__info">
+          <img src="dist/images/logo.png" alt="one piece" />
+          <h3 class="title">ONE PIECE: A Série</h3>
+          <p class="text">
+            O jovem pirata Monkey D. Luffy veste o chapéu de palha e, com sua
+            tripulação atrapalhada, zarpa em uma jornada épica nesta adaptação
+            em live-action do popular mangá.
+          </p>
+          <a href="#" class="button">Assita ao trailer</a>
+        </div>
       </div>
     </section>
 
     <section class="about container">
-      <h2 class="sectionTitle--blue">Sobre</h2>
-      <p class="sectionText sectionText--blue">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet labore
-        nam repudiandae incidunt provident fugiat tempora consectetur culpa
-        molestias officiis, eum, quos unde velit, quo facilis ab tempore
-        deleniti officia.
-      </p>
-      <img src="" alt="" />
+      <div class="about__text">
+        <h2 class="title--big">Sobre</h2>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+          labore nam repudiandae incidunt provident fugiat tempora consectetur
+          culpa molestias officiis, eum, quos unde velit, quo facilis ab tempore
+          deleniti officia.
+        </p>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
+          labore nam repudiandae incidunt provident fugiat tempora consectetur
+          culpa molestias officiis, eum, quos unde velit, quo facilis ab tempore
+          deleniti officia.
+        </p>
+      </div>
+      <img src="dist/images/about/luffy.png" alt="Luffy" />
     </section>
+
+    <section class="actors container">
+      <h2 class="title--big">Atores principais</h2>
+
+      <div
+        data-tab-id="luffy"
+        class="actors__content actors__content--is-active"
+      >
+        <div class="actors__content__info">
+          <div class="actors__content__info__text">
+            <h3 class="title--small">Luffy</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, rem! Nam, ipsa modi illo natus nemo fugit quaerat quam
+              quisquam perspiciatis ducimus provident asperiores, maiores error
+              aliquam. Quaerat, culpa quibusdam?
+            </p>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, rem! Nam, ipsa modi illo natus nemo fugit quaerat quam
+              quisquam perspiciatis ducimus provident asperiores, maiores error
+              aliquam. Quaerat, culpa quibusdam?
+            </p>
+            <nav class="actors__content__info__tabs">
+              <img
+                data-tab-button="luffy"
+                class="tab-button--is-active"
+                src="dist/images/actors/icone/luffy.png"
+                alt="Luffy icone"
+              />
+              <img
+                data-tab-button="zoro"
+                src="dist/images/actors/icone/zoro.png"
+                alt="Zoro icone"
+              /><img
+                data-tab-button="nami"
+                src="dist/images/actors/icone/Nami.png"
+                alt="Nami icone"
+              /><img
+                data-tab-button="usopp"
+                src="dist/images/actors/icone/Usopp.png"
+                alt="Usopp icone"
+              /><img
+                data-tab-button="sanji"
+                src="dist/images/actors/icone/Sanji.png"
+                alt="Sanji icone"
+              />
+            </nav>
+          </div>
+        </div>
+        <div class="actors__content__img">
+          <img src="dist/images/about/luffy.png" alt="luffy" />
+          <h4 class="text--big">Iñaki Godoy</h4>
+        </div>
+      </div>
+
+      <div data-tab-id="zoro" class="actors__content actors__content--zoro">
+        <div class="actors__content__info">
+          <div class="actors__content__info__text">
+            <h3 class="title--small">Zoro</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, rem! Nam, ipsa modi illo natus nemo fugit quaerat quam
+              quisquam perspiciatis ducimus provident asperiores, maiores error
+              aliquam. Quaerat, culpa quibusdam?
+            </p>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, rem! Nam, ipsa modi illo natus nemo fugit quaerat quam
+              quisquam perspiciatis ducimus provident asperiores, maiores error
+              aliquam. Quaerat, culpa quibusdam?
+            </p>
+            <nav class="actors__content__info__tabs">
+              <img
+                data-tab-button="luffy"
+                src="dist/images/actors/icone/luffy.png"
+                alt="Luffy icone"
+              />
+              <img
+                data-tab-button="zoro"
+                class="tab-button--is-active"
+                src="dist/images/actors/icone/zoro.png"
+                alt="Zoro icone"
+              /><img
+                data-tab-button="nami"
+                src="dist/images/actors/icone/Nami.png"
+                alt="Nami icone"
+              /><img
+                data-tab-button="usopp"
+                src="dist/images/actors/icone/Usopp.png"
+                alt="Usopp icone"
+              /><img
+                data-tab-button="sanji"
+                src="dist/images/actors/icone/Sanji.png"
+                alt="Sanji icone"
+              />
+            </nav>
+          </div>
+        </div>
+        <div class="actors__content__img">
+          <img src="dist/images/actors/actors/zoro.png" alt="luffy" />
+          <h4 class="text--big">Iñaki Godoy</h4>
+        </div>
+      </div>
+
+      <div data-tab-id="nami" class="actors__content actors__content--nami">
+        <div class="actors__content__info">
+          <div class="actors__content__info__text">
+            <h3 class="title--small">Luffy</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, rem! Nam, ipsa modi illo natus nemo fugit quaerat quam
+              quisquam perspiciatis ducimus provident asperiores, maiores error
+              aliquam. Quaerat, culpa quibusdam?
+            </p>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, rem! Nam, ipsa modi illo natus nemo fugit quaerat quam
+              quisquam perspiciatis ducimus provident asperiores, maiores error
+              aliquam. Quaerat, culpa quibusdam?
+            </p>
+            <nav class="actors__content__info__tabs">
+              <img
+                data-tab-button="luffy"
+                src="dist/images/actors/icone/luffy.png"
+                alt="Luffy icone"
+              />
+              <img
+                data-tab-button="zoro"
+                src="dist/images/actors/icone/zoro.png"
+                alt="Zoro icone"
+              /><img
+                data-tab-button="nami"
+                class="tab-button--is-active"
+                src="dist/images/actors/icone/Nami.png"
+                alt="Nami icone"
+              /><img
+                data-tab-button="usopp"
+                src="dist/images/actors/icone/Usopp.png"
+                alt="Usopp icone"
+              /><img
+                data-tab-button="sanji"
+                src="dist/images/actors/icone/Sanji.png"
+                alt="Sanji icone"
+              />
+            </nav>
+          </div>
+        </div>
+        <div class="actors__content__img">
+          <img src="dist/images/about/luffy.png" alt="luffy" />
+          <h4 class="text--big">Iñaki Godoy</h4>
+        </div>
+      </div>
+
+      <div data-tab-id="usopp" class="actors__content actors__content--usopp">
+        <div class="actors__content__info">
+          <div class="actors__content__info__text">
+            <h3 class="title--small">Luffy</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, rem! Nam, ipsa modi illo natus nemo fugit quaerat quam
+              quisquam perspiciatis ducimus provident asperiores, maiores error
+              aliquam. Quaerat, culpa quibusdam?
+            </p>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, rem! Nam, ipsa modi illo natus nemo fugit quaerat quam
+              quisquam perspiciatis ducimus provident asperiores, maiores error
+              aliquam. Quaerat, culpa quibusdam?
+            </p>
+            <nav class="actors__content__info__tabs">
+              <img
+                data-tab-button="luffy"
+                src="dist/images/actors/icone/luffy.png"
+                alt="Luffy icone"
+              />
+              <img
+                data-tab-button="zoro"
+                src="dist/images/actors/icone/zoro.png"
+                alt="Zoro icone"
+              /><img
+                data-tab-button="nami"
+                src="dist/images/actors/icone/Nami.png"
+                alt="Nami icone"
+              /><img
+                data-tab-button="usopp"
+                class="tab-button--is-active"
+                src="dist/images/actors/icone/Usopp.png"
+                alt="Usopp icone"
+              /><img
+                data-tab-button="sanji"
+                src="dist/images/actors/icone/Sanji.png"
+                alt="Sanji icone"
+              />
+            </nav>
+          </div>
+        </div>
+        <div class="actors__content__img">
+          <img src="dist/images/about/luffy.png" alt="luffy" />
+          <h4 class="text--big">Iñaki Godoy</h4>
+        </div>
+      </div>
+
+      <div data-tab-id="sanji" class="actors__content actors__content--sanji">
+        <div class="actors__content__info">
+          <div class="actors__content__info__text">
+            <h3 class="title--small">Luffy</h3>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, rem! Nam, ipsa modi illo natus nemo fugit quaerat quam
+              quisquam perspiciatis ducimus provident asperiores, maiores error
+              aliquam. Quaerat, culpa quibusdam?
+            </p>
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores, rem! Nam, ipsa modi illo natus nemo fugit quaerat quam
+              quisquam perspiciatis ducimus provident asperiores, maiores error
+              aliquam. Quaerat, culpa quibusdam?
+            </p>
+            <nav class="actors__content__info__tabs">
+              <img
+                data-tab-button="luffy"
+                src="dist/images/actors/icone/luffy.png"
+                alt="Luffy icone"
+              />
+              <img
+                data-tab-button="zoro"
+                src="dist/images/actors/icone/zoro.png"
+                alt="Zoro icone"
+              /><img
+                data-tab-button="nami"
+                src="dist/images/actors/icone/Nami.png"
+                alt="Nami icone"
+              /><img
+                data-tab-button="usopp"
+                src="dist/images/actors/icone/Usopp.png"
+                alt="Usopp icone"
+              /><img
+                data-tab-button="sanji"
+                class="tab-button--is-active"
+                src="dist/images/actors/icone/Sanji.png"
+                alt="Sanji icone"
+              />
+            </nav>
+          </div>
+        </div>
+        <div class="actors__content__img">
+          <img src="dist/images/about/luffy.png" alt="luffy" />
+          <h4 class="text--big">Iñaki Godoy</h4>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="dist/js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,132 @@
+@mixin content() {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: rgba(7, 45, 74, 1);
+  height: 600px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(7, 45, 74, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(7, 45, 74, 1);
+  box-shadow: 10px 10px 5px 0px rgba(7, 45, 74, 1);
+
+  &__info {
+    &__text {
+      padding: 16px;
+      width: 60%;
+      height: 80%;
+    }
+    &__tabs {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60%;
+      height: 20%;
+      background-color: brown;
+      padding: 16px;
+      border-radius: 0 0 0 20px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        max-width: 45px;
+        width: 100%;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+
+
+        &:hover {
+          transform: scale(1.25);
+          transition: transform 0.2s ease;
+        }
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    background-color: brown;
+    width: 40%;
+    border-radius: 0 20px 0 0;
+    text-align: center;
+    height: 100%;
+
+    border-radius: 0 20px 20px 0;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 80%;
+      border-radius: 0 40px 0 0;
+      display: flex;
+      padding: 16px;
+      object-position: top center;
+    }
+
+    h4 {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20%;
+      background-color: rgba(7, 45, 74, 1);
+
+    }
+  }
+}
+
+.actors {
+  padding: 16px;
+
+  &__content {
+    @include content();
+    display: none;
+
+    &--zoro {
+      .actors__content__info__tabs {
+        background-color: green;
+      }
+
+      .actors__content__img {
+        background-color: green;
+      }
+    }
+
+    &--nami {
+      .actors__content__info__tabs {
+        background-color: orange;
+      }
+
+      .actors__content__img {
+        background-color: orange;
+      }
+    }
+
+    &--usopp {
+      .actors__content__info__tabs {
+        background-color: saddlebrown;
+      }
+
+      .actors__content__img {
+        background-color: saddlebrown;
+      }
+    }
+
+    &--sanji {
+      .actors__content__info__tabs {
+        background-color: rgb(255, 255, 4);
+      }
+
+      .actors__content__img {
+        background-color: rgb(255, 255, 4);
+      }
+    }
+
+    &--is-active {
+      display: block;
+    }
+  }
+}
