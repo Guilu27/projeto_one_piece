@@ -2,6 +2,7 @@
 @use "hero";
 @use "about";
 @use "actors";
+@use "trailer";
 
 @mixin text($fontSize: 16px, $marginBottom: 16px) {
   font-size: $fontSize;
@@ -67,6 +68,6 @@ body {
 }
 
 .tab-button--is-active {
-  transform: scale(1.25);
+  transform: scale(1.3);
   transition: transform 0.2s ease;
 }

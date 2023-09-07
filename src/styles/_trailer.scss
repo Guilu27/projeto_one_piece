@@ -1,0 +1,26 @@
+.trailer {
+  .title--big {
+    text-align: center;
+  }
+
+  &__container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 10%;
+      width: 80%;
+      height: 80%;
+
+      @media (max-width: 1023px) {
+        width: 100%;
+        height: 100%;
+        left: 0;
+      }
+    }
+  }
+}

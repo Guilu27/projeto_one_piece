@@ -30,14 +30,13 @@
       align-items: center;
 
       img {
-        max-width: 45px;
+        max-width: 60px;
         width: 100%;
         cursor: pointer;
         transition: transform 0.2s ease;
 
-
         &:hover {
-          transform: scale(1.25);
+          transform: scale(1.4);
           transition: transform 0.2s ease;
         }
       }
@@ -73,13 +72,16 @@
       align-items: center;
       height: 20%;
       background-color: rgba(7, 45, 74, 1);
-
     }
   }
 }
 
 .actors {
   padding: 16px;
+
+  .title--big {
+    text-align: center;
+  }
 
   &__content {
     @include content();
