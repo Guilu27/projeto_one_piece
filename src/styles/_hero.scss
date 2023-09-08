@@ -1,6 +1,9 @@
 @use "variaveis";
 
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
+
   &__content {
     position: relative;
 

@@ -28,6 +28,9 @@ body {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 32px;
+
+  background-image: linear-gradient()
+
 }
 
 .title {
@@ -40,6 +43,10 @@ body {
 
 .title--big {
   @include text(40px, 32px);
+
+  &--blue {
+    color: variaveis.$backgroundColor;
+  }
 }
 
 .text {
