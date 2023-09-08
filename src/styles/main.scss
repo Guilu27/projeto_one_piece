@@ -3,6 +3,7 @@
 @use "about";
 @use "actors";
 @use "trailer";
+@use "episodes";
 
 @mixin text($fontSize: 16px, $marginBottom: 16px) {
   font-size: $fontSize;
@@ -29,8 +30,7 @@ body {
   margin: 0 auto;
   margin-bottom: 32px;
 
-  background-image: linear-gradient()
-
+  background-image: linear-gradient();
 }
 
 .title {

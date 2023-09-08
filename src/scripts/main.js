@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll("[data-tab-button]");
+  const episodes = document.querySelectorAll("[data-episode]");
+
+  for (let i = 0; i < episodes.length; i++) {
+    episodes[i].addEventListener("click", openOrCloseEpisodeInfo);
+  }
 
   for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", function (button) {
@@ -47,4 +52,12 @@ function removeClassTabs() {
   for (let i = 0; i < tabs.length; i++) {
     navActors.classList.remove(`actors__content__tabs--${tabs[i]}`);
   }
+}
+
+function openOrCloseEpisodeInfo(episode) {
+  const className = "episodes__list__item--is-open";
+  const parentElement = episode.target.parentNode;
+
+  parentElement.classList.toggle(className);
+
 }
