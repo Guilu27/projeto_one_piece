@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="dist/styles/main.css" />
   </head>
   <body>
-    <nav></nav>
+    <header class="header header--is-hidden">
+      <div class="header__container">
+        <h1>
+          <img
+            class="header__logo"
+            src="dist/images/logo.png"
+            alt="One piece"
+          />
+        </h1>
+
+        <a
+          target="_blank"
+          href="https://www.netflix.com/br/title/80217863"
+          class="button button--dark"
+          >Assistir Agora</a
+        >
+      </div>
+    </header>
+
     <section class="hero">
       <div class="hero__content">
         <div class="hero__content__background">
@@ -30,7 +48,6 @@
             tripulação atrapalhada, zarpa em uma jornada épica nesta adaptação
             em live-action do popular mangá.
           </p>
-          <a href="#trailer" class="button">Assita ao trailer</a>
         </div>
       </div>
     </section>
@@ -39,39 +56,54 @@
       <div class="about__text">
         <h2 class="title--big">Sobre</h2>
         <p class="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
-          labore nam repudiandae incidunt provident fugiat tempora consectetur
-          culpa molestias officiis, eum, quos unde velit, quo facilis ab tempore
-          deleniti officia.
+          "One Piece" é uma das séries de anime e mangá mais populares e
+          duradouras da história. Criada por Eiichiro Oda, a série começou a ser
+          publicada em 1997 no Japão e rapidamente se tornou um fenômeno global.
+          A história é ambientada em um mundo de piratas e aventuras, repleto de
+          ilhas exóticas, criaturas estranhas e uma vasta gama de personagens
+          memoráveis.
         </p>
         <p class="text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
-          labore nam repudiandae incidunt provident fugiat tempora consectetur
-          culpa molestias officiis, eum, quos unde velit, quo facilis ab tempore
-          deleniti officia.
+          A trama gira em torno de Monkey D. Luffy, um jovem pirata com um
+          objetivo ousado: encontrar o One Piece, um tesouro lendário que foi
+          escondido em algum lugar do Grand Line, a rota mais perigosa e
+          misteriosa dos mares. Luffy, no entanto, não é um pirata comum. Ele
+          comeu uma Akuma no Mi, uma fruta do diabo, que lhe concedeu a
+          habilidade de esticar seu corpo como borracha, tornando-o um "Homem de
+          Borracha."
+        </p>
+        <p class="text">
+          Luffy forma uma tripulação diversificada conhecida como os Piratas do
+          Chapéu de Palha, que inclui membros com habilidades únicas, como um
+          espadachim habilidoso, um atirador preciso e um cozinheiro talentoso.
+          Juntos, eles enfrentam inúmeras aventuras, desafiam governos
+          corruptos, lutam contra outros piratas poderosos e exploram o vasto
+          mundo de "One Piece".
         </p>
       </div>
-      <img src="dist/images/about/luffy.png" alt="Luffy" />
+      <img src="dist/images/about/promise.png" alt="Luffy" />
     </section>
 
     <section class="actors container">
+      <h2 class="title--big">Atores principais</h2>
       <div class="actors__content">
         <div
           data-tab-id="luffy"
           class="actors__content__tab actors__content__tab--is-active"
         >
           <div class="actors__content__actor-card">
-            <img src="dist/images/about/luffy.png" alt="" />
+            <img src="dist/images/actors/actors/luffy.png" alt="" />
             <h3 class="title--small">Iñaki Godoy</h3>
           </div>
           <div class="actors__content__info">
             <div class="actors__content__info__text">
-              <h3 class="title--small">Luffy</h3>
+              <h3 class="title--small">Monkey D. Luffy</h3>
               <p class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eveniet a nobis nam dicta culpa, dolor ex deleniti magni
-                voluptates iusto enim natus? Magnam est officiis vel. Maxime qui
-                officiis numquam?
+                Monkey D. Luffy é o carismático protagonista de "One Piece" com
+                poderes elásticos devido à Akuma no Mi "Gomu Gomu no Mi". Ele
+                lidera os Piratas do Chapéu de Palha na busca pelo tesouro
+                lendário, o One Piece, em um mundo repleto de piratas, aventuras
+                e desafios.
               </p>
             </div>
           </div>
@@ -79,17 +111,16 @@
 
         <div data-tab-id="zoro" class="actors__content__tab">
           <div class="actors__content__actor-card">
-            <img src="dist/images/about/luffy.png" alt="" />
+            <img src="dist/images/actors/actors/zoro.png" alt="" />
             <h3 class="title--small">Mackenyu</h3>
           </div>
           <div class="actors__content__info">
             <div class="actors__content__info__text">
-              <h3 class="title--small">Zoro</h3>
+              <h3 class="title--small">Roronoa Zoro</h3>
               <p class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eveniet a nobis nam dicta culpa, dolor ex deleniti magni
-                voluptates iusto enim natus? Magnam est officiis vel. Maxime qui
-                officiis numquam?
+                Roronoa Zoro é um membro leal e habilidoso dos Piratas do Chapéu
+                de Palha em "One Piece". Ele é um mestre na arte da espada e
+                busca se tornar o maior espadachim do mundo.
               </p>
             </div>
           </div>
@@ -97,17 +128,16 @@
 
         <div data-tab-id="nami" class="actors__content__tab">
           <div class="actors__content__actor-card">
-            <img src="dist/images/about/luffy.png" alt="" />
+            <img src="dist/images/actors/actors/nami.png" alt="" />
             <h3 class="title--small">Emily Rudd</h3>
           </div>
           <div class="actors__content__info">
             <div class="actors__content__info__text">
               <h3 class="title--small">Nami</h3>
               <p class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eveniet a nobis nam dicta culpa, dolor ex deleniti magni
-                voluptates iusto enim natus? Magnam est officiis vel. Maxime qui
-                officiis numquam?
+                Nami é a navegadora dos Piratas do Chapéu de Palha em "One
+                Piece" e é apaixonada por cartografia e meteorologia. Com suas
+                habilidades de navegação e estratégia.
               </p>
             </div>
           </div>
@@ -115,17 +145,16 @@
 
         <div data-tab-id="usopp" class="actors__content__tab">
           <div class="actors__content__actor-card">
-            <img src="dist/images/about/luffy.png" alt="" />
+            <img src="dist/images/actors/actors/usopp.png" alt="" />
             <h3 class="title--small">Jacob Romero Gibson</h3>
           </div>
           <div class="actors__content__info">
             <div class="actors__content__info__text">
               <h3 class="title--small">Usopp</h3>
               <p class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eveniet a nobis nam dicta culpa, dolor ex deleniti magni
-                voluptates iusto enim natus? Magnam est officiis vel. Maxime qui
-                officiis numquam?
+                Usopp, dos Piratas do Chapéu de Palha em "One Piece", é um
+                atirador habilidoso e contador de histórias. Com sua mira
+                precisa e talento para criar armas.
               </p>
             </div>
           </div>
@@ -133,23 +162,23 @@
 
         <div data-tab-id="sanji" class="actors__content__tab">
           <div class="actors__content__actor-card">
-            <img src="dist/images/about/luffy.png" alt="" />
+            <img src="dist/images/actors/actors/sanji.png" alt="" />
             <h3 class="title--small">Taz Skylar</h3>
           </div>
           <div class="actors__content__info">
             <div class="actors__content__info__text">
               <h3 class="title--small">Sanji</h3>
               <p class="text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Eveniet a nobis nam dicta culpa, dolor ex deleniti magni
-                voluptates iusto enim natus? Magnam est officiis vel. Maxime qui
-                officiis numquam?
+                Sanji é o cozinheiro habilidoso dos Piratas do Chapéu de Palha
+                em "One Piece", também um mestre em artes marciais que luta
+                usando as pernas. Seu sonho é encontrar o All Blue, uma região
+                com todos os tipos de peixes e ingredientes.
               </p>
             </div>
           </div>
         </div>
 
-        <nav class="actors__content__tabs">
+        <nav class="actors__content__tabs actors__content__tabs--luffy">
           <div class="actors__content__tabs__buttons">
             <img
               data-tab-button="luffy"
@@ -183,141 +212,117 @@
       </div>
     </section>
 
-    <!-- <section class="trailer container" id="trailer">
-      <h2 class="title--big">Trailer</h2>
-
-      <div class="trailer__container">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/YC8SLpnxsL4?si=oQKiu_R-Rvczq70Y"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </section> -->
-
     <section class="episodes container">
       <h2 class="title--big">Episódios</h2>
       <ul class="episodes__list">
         <li class="episodes__list__item">
           <div class="episodes__list__item__title" data-episode>
-            Nome do epidodio
+            1. O amanhecer de uma aventura, 64 min
           </div>
           <div class="episodes__list__item__info">
-            <img src="dist/images/episodes/ep1.jpg" alt="" />
+            <img src="dist/images/episodes/ep1.png" alt="" />
             <p class="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-              saepe illum, perspiciatis nam corporis distinctio officiis totam
-              fugiat id recusandae vel minus molestias itaque voluptates nostrum
-              ab quam hic soluta!
+              Preso em um barco afundando, Luffy começa a jornada em busca do
+              tesouro perdido do rei dos piratas. Só que, para isso, ele precisa
+              de uma tripulação, um navio e um mapa.
             </p>
           </div>
         </li>
 
         <li class="episodes__list__item">
           <div class="episodes__list__item__title" data-episode>
-            Nome do epidodio
+            2. O homem do chapéu de palha, 55 min
           </div>
           <div class="episodes__list__item__info">
-            <img src="dist/images/episodes/ep1.jpg" alt="" />
+            <img src="dist/images/episodes/ep2.png" alt="" />
             <p class="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-              saepe illum, perspiciatis nam corporis distinctio officiis totam
-              fugiat id recusandae vel minus molestias itaque voluptates nostrum
-              ab quam hic soluta!
+              Após conseguirem o mapa da Grand Line, Luffy, Nami e Zoro
+              enfrentam um palhaço que não está para brincadeira. O novo cadete
+              Koby é encurralado pelo Vice-Almirante Garp.
             </p>
           </div>
         </li>
 
         <li class="episodes__list__item">
           <div class="episodes__list__item__title" data-episode>
-            Nome do epidodio
+            3. O contador de histórias, 58 min
           </div>
           <div class="episodes__list__item__info">
-            <img src="dist/images/episodes/ep1.jpg" alt="" />
+            <img src="dist/images/episodes/ep3.png" alt="" />
             <p class="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-              saepe illum, perspiciatis nam corporis distinctio officiis totam
-              fugiat id recusandae vel minus molestias itaque voluptates nostrum
-              ab quam hic soluta!
+              Em busca de um navio, o grupo chega à Vila Syrup e encontra o
+              animado Usopp e sua amiga Kaya. Mas uma ameaça sinistra atrapalha
+              os planos.
             </p>
           </div>
         </li>
 
         <li class="episodes__list__item">
           <div class="episodes__list__item__title" data-episode>
-            Nome do epidodio
+            4. Os piratas estão vindo, 63 min
           </div>
           <div class="episodes__list__item__info">
-            <img src="dist/images/episodes/ep1.jpg" alt="" />
+            <img src="dist/images/episodes/ep4.png" alt="" />
             <p class="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-              saepe illum, perspiciatis nam corporis distinctio officiis totam
-              fugiat id recusandae vel minus molestias itaque voluptates nostrum
-              ab quam hic soluta!
+              Com os amigos em perigo e o plano de Klahador em ação, Usopp pede
+              ajuda à Marinha. O clima esquenta em uma batalha na mansão de
+              Kaya.
             </p>
           </div>
         </li>
 
         <li class="episodes__list__item">
           <div class="episodes__list__item__title" data-episode>
-            Nome do epidodio
+            5. Venha comer no Baratie!, 51 min
           </div>
           <div class="episodes__list__item__info">
-            <img src="dist/images/episodes/ep1.jpg" alt="" />
+            <img src="dist/images/episodes/ep5.png" alt="" />
             <p class="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-              saepe illum, perspiciatis nam corporis distinctio officiis totam
-              fugiat id recusandae vel minus molestias itaque voluptates nostrum
-              ab quam hic soluta!
+              O Bando do Chapéu de Palha enfrenta o primeiro adversário. Num
+              restaurante flutuante, Luffy faz amizade com um cozinheiro, e Zoro
+              se envolve em um duelo.
             </p>
           </div>
         </li>
 
         <li class="episodes__list__item">
           <div class="episodes__list__item__title" data-episode>
-            Nome do epidodio
+            6. O chef e o faz-tudo, 54 min
           </div>
           <div class="episodes__list__item__info">
-            <img src="dist/images/episodes/ep1.jpg" alt="" />
+            <img src="dist/images/episodes/ep6.png" alt="" />
             <p class="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-              saepe illum, perspiciatis nam corporis distinctio officiis totam
-              fugiat id recusandae vel minus molestias itaque voluptates nostrum
-              ab quam hic soluta!
+              Sanji e o chef Zeff deixam as diferenças de lado para salvar Zoro,
+              que está gravemente ferido. Um homem-peixe implacável causa
+              problemas para a tripulação.
             </p>
           </div>
         </li>
 
         <li class="episodes__list__item">
           <div class="episodes__list__item__title" data-episode>
-            Nome do epidodio
+            7. A garota com a tatuagem de peixe-serra, 58 min
           </div>
           <div class="episodes__list__item__info">
-            <img src="dist/images/episodes/ep1.jpg" alt="" />
+            <img src="dist/images/episodes/ep7.png" alt="" />
             <p class="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-              saepe illum, perspiciatis nam corporis distinctio officiis totam
-              fugiat id recusandae vel minus molestias itaque voluptates nostrum
-              ab quam hic soluta!
+              Após fazer um acordo com um velho inimigo para encontrar Arlong,
+              Luffy e seus amigos navegam até a Vila Cocoyashi e descobrem o
+              passado misterioso de Nami.
             </p>
           </div>
         </li>
 
         <li class="episodes__list__item">
           <div class="episodes__list__item__title" data-episode>
-            Nome do epidodio
+            8. O mais procurado do East Blue, 49 min
           </div>
           <div class="episodes__list__item__info">
-            <img src="dist/images/episodes/ep1.jpg" alt="" />
+            <img src="dist/images/episodes/ep8.png" alt="" />
             <p class="text">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-              saepe illum, perspiciatis nam corporis distinctio officiis totam
-              fugiat id recusandae vel minus molestias itaque voluptates nostrum
-              ab quam hic soluta!
+              A tripulação dos chapéus de palha luta para derrotar Arlong e os
+              homens-peixe de uma vez por todas. Após uma difícil reunião de
+              família, Luffy fica mais perto do seu sonho.
             </p>
           </div>
         </li>

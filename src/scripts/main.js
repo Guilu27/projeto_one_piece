@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll("[data-tab-button]");
   const episodes = document.querySelectorAll("[data-episode]");
+  const heroSection = document.querySelector(".hero");
+
+  window.addEventListener("scroll", function () {
+    const heroHeight = heroSection.clientHeight;
+    const currentPosition = window.scrollY;
+
+    if (currentPosition < heroHeight) {
+      hiddenHeaderElements();
+    } else {
+      showsHeaderElements();
+    }
+  });
 
   for (let i = 0; i < episodes.length; i++) {
     episodes[i].addEventListener("click", openOrCloseEpisodeInfo);
@@ -28,6 +40,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+function hiddenHeaderElements() {
+  const header = document.querySelector("header");
+  header.classList.add("header--is-hidden");
+}
+
+function showsHeaderElements() {
+  const header = document.querySelector("header");
+  header.classList.remove("header--is-hidden");
+}
 
 function hideAllTabs() {
   const tabs = document.querySelectorAll("[data-tab-id]");
@@ -59,5 +81,4 @@ function openOrCloseEpisodeInfo(episode) {
   const parentElement = episode.target.parentNode;
 
   parentElement.classList.toggle(className);
-
 }

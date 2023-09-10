@@ -2,8 +2,10 @@
 @use "hero";
 @use "about";
 @use "actors";
-@use "trailer";
 @use "episodes";
+@use "header";
+
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Roboto+Condensed:wght@400;700&display=swap");
 
 @mixin text($fontSize: 16px, $marginBottom: 16px) {
   font-size: $fontSize;
@@ -12,41 +14,44 @@
   margin-bottom: $marginBottom;
 }
 
+@mixin title() {
+  font-family: "Merienda", cursive;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
   background-color: variaveis.$backgroundColor;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 32px;
-
-  background-image: linear-gradient();
+  margin-bottom: 64px;
 }
 
 .title {
   @include text(32px, 32px);
+  @include title();
 }
 
 .title--small {
   @include text(24px);
+  @include title();
 }
 
 .title--big {
   @include text(40px, 32px);
 
-  &--blue {
-    color: variaveis.$backgroundColor;
-  }
+  @include title();
 }
 
 .text {
@@ -67,7 +72,9 @@ body {
   padding: 16px;
   text-decoration: none;
   border-radius: 10px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
 
   &:hover {
     background-color: lighten(variaveis.$buttonColor, 3);

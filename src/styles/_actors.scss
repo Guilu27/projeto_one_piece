@@ -1,15 +1,23 @@
 @use "variaveis";
 
 .actors {
+  padding: 16px 0;
+
+  .title--big {
+    text-align: center;
+  }
+
   &__content {
     position: relative;
     height: 100%;
     width: 90%;
     margin: 0 auto;
-    border: 5px white solid;
-    border-radius: 25px;
 
-    @media (max-width: 767px) {
+    border-radius: 20px;
+
+    box-shadow: 16px 16px 26px #041b2c, -16px -16px 26px #0a3f68;
+
+    @media (max-width: 800px) {
       display: flex;
       flex-direction: column-reverse;
       position: static;
@@ -29,13 +37,20 @@
       position: absolute;
       top: 10%;
       left: 65%;
+      border-radius: 25px;
+      background: linear-gradient(145deg, #07304f, #062943);
+      -webkit-box-shadow: 10px 10px 5px 0px rgba(7, 45, 74, 1);
+      -moz-box-shadow: 10px 10px 5px 0px rgba(7, 45, 74, 1);
+      box-shadow: 8px 16px 8px 0px rgba(7, 45, 74, 1);
 
-      @media (max-width: 767px) {
+      @media (max-width: 800px) {
         margin: 0 auto;
         position: static;
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
+
+        box-shadow: none;
       }
 
       img {
@@ -44,16 +59,13 @@
         width: 100%;
         object-fit: cover;
         object-position: top center;
-        border: 3px white solid;
+
         display: flex;
         border-radius: 20px 20px 0 0;
         border-bottom: 0;
 
-        @media (max-width: 767px) {
+        @media (max-width: 800px) {
           border-radius: 0;
-          border-right: 0;
-          border-left: 0;
-          border-bottom: 3px white solid;
         }
       }
 
@@ -65,11 +77,11 @@
         min-height: 72px;
         height: 30%;
         width: 100%;
-        border: 3px white solid;
-        background-color: black;
+
+        background-color: variaveis.$backgroundColor;
         border-radius: 0 0 20px 20px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 800px) {
           margin: 0;
           border-radius: 0;
           border-right: 0;
@@ -84,12 +96,12 @@
       min-height: 217px;
       width: 100%;
       height: 65%;
-      background-color: black;
+      background-color: variaveis.$backgroundColor;
       border-radius: 20px 20px 0 0;
       padding-left: 40px;
       padding-top: 40px;
 
-      @media (max-width: 767px) {
+      @media (max-width: 800px) {
         min-width: 0;
         width: 100%;
         margin: 0 auto;
@@ -104,7 +116,7 @@
       &__text {
         width: 57%;
 
-        @media (max-width: 767px) {
+        @media (max-width: 800px) {
           width: 100%;
           text-align: center;
         }
@@ -112,7 +124,6 @@
     }
 
     &__tabs {
-      background-color: brown;
       min-width: 692px;
       min-height: 115px;
       width: 100%;
@@ -127,7 +138,7 @@
           brightness(117%) contrast(98%);
       }
 
-      @media (max-width: 767px) {
+      @media (max-width: 800px) {
         min-width: 0;
         width: 100%;
         margin: 0 auto;
@@ -136,6 +147,8 @@
       }
 
       &--luffy {
+        background-color: #bf0f0f;
+
         img {
           filter: invert(93%) sepia(8%) saturate(574%) hue-rotate(26deg)
             brightness(117%) contrast(98%);
@@ -152,7 +165,7 @@
       }
 
       &--nami {
-        background-color: rgb(255, 68, 0);
+        background-color: #ff4a1c;
 
         img {
           filter: invert(93%) sepia(8%) saturate(574%) hue-rotate(26deg)
@@ -161,7 +174,7 @@
       }
 
       &--usopp {
-        background-color: saddlebrown;
+        background-color: #8c3211;
 
         img {
           filter: invert(93%) sepia(8%) saturate(574%) hue-rotate(26deg)
@@ -170,7 +183,7 @@
       }
 
       &--sanji {
-        background-color: yellow;
+        background-color: #feff00;
 
         img {
           filter: invert(13%) sepia(44%) saturate(7386%) hue-rotate(194deg)
@@ -185,7 +198,7 @@
         align-items: center;
         padding-left: 16px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 800px) {
           position: static;
           width: 100%;
         }
@@ -195,9 +208,9 @@
           width: auto;
           transition: opacity 0.3s ease, transform 0.3s ease;
           cursor: pointer;
-          color: black;
+          color: variaveis.$backgroundColor;
 
-          @media (max-width: 767px) {
+          @media (max-width: 800px) {
             max-height: 40px;
           }
 
@@ -210,7 +223,7 @@
             opacity: 100%;
             transition: opacity 0.3s ease, transform 0.3s ease;
 
-            @media (max-width: 767px) {
+            @media (max-width: 800px) {
               transform: scale(1.6);
             }
 
@@ -227,7 +240,7 @@
           transform: scale(1.4);
           opacity: 100%;
 
-          @media (max-width: 767px) {
+          @media (max-width: 800px) {
             transform: scale(1.6);
           }
 

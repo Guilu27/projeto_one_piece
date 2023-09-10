@@ -1,9 +1,7 @@
 @use "variaveis";
 
 .hero {
-  max-width: 1600px;
-  margin: 0 auto;
-
+  margin-bottom: 40px;
   &__content {
     position: relative;
 
@@ -43,7 +41,7 @@
         }
 
         &:hover {
-          transform: scale(1.2) rotate(-1deg);
+          transform: scale(1.1) rotate(-1deg);
         }
       }
 
